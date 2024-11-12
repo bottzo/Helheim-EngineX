@@ -1321,7 +1321,7 @@ void ModuleOpenGL::Draw()
 	
 	for (std::map<float, const SpotLightComponent*>::iterator it = orderedLights.begin(); it != orderedLights.end(); ++it)
 	{	
-		if (chosenLights.size() > NUM_SHADOW_MAPS)
+		if (chosenLights.size() >= NUM_SHADOW_MAPS)
 			break;
 		//if (App->GetCamera()->GetCurrentCamera()->GetFrustum().Intersects(it->second->GetFrustum()))
 		//{
